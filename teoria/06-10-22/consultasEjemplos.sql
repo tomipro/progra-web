@@ -1,0 +1,29 @@
+-- INSERT INTO `compra` (
+--         `id`,
+--         `id_usuario`,
+--         `id_producto`,
+--         `fechahora`,
+--         `cantidad`,
+--         `valor`
+--     )
+-- VALUES (
+--         NULL,
+--         '1',
+--         '2',
+--         '2022-10-04 11:23:36',
+--         '23',
+--         '630'
+--     )
+-- SELECT * FROM usuario;
+-- INSERT INTO usuario (
+--     (id,nombre,apellido,email,pass)
+-- )
+-- UPDATE usuario
+-- SET nombre = 'Tomi'
+-- WHERE id = 1;
+-- INSERT INTO producto (id, producto, precio)
+-- VALUES (NULL, 'CARTUCHERA', 632.69);
+
+
+-- DELETE FROM producto
+-- WHERE id = 3;
