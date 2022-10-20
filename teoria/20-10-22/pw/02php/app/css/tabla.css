@@ -1,0 +1,321 @@
+/* ------------------------ INICIO: Estilo de la tabla ------------------------ */
+
+.tablaListado {/* selecciona la clase tablaListado */
+    width: 100%;/* ancho total (100%)*/
+    margin: 0px 0px;/*margen   horizontal y vertical en cero*/
+
+}
+
+.tablaListado th {/* selecciona todas los elementos th(elemento head) dentro de
+                 la clase tablaListado */
+    border-bottom: 2px solid #666;/* borde de abajo  */
+    border-top: 2px solid #666;/* borde de arriba */
+    padding: 3px 0px;/* relleno  */
+    color: #333;/* color del contenido*/
+}
+
+.tablaListado thead th {/* selecciona todas los elementos 
+             th(elemento head) dentro de thead 
+             y ademas dentro de la clase tablaListado */
+    background-color: #8F8F8F;/* color de fondo  */
+    text-align: center;/* alineado del texto */
+}
+
+.tablaListado tfoot th {/* selecciona todas los elementos th(elemento head) dentro de tfoot y de la clase tablaListado */
+    background-color: #D2D2D2; /* color de fondo  */
+    text-align: right;/* alineado del texto */
+    padding: 3px;/* relleno */
+}
+.tablaListado td {/* selecciona todos los elementos td dentro 
+                  de la clase tablaListado */
+    border-bottom: 2px solid #FFF; /* borde de arriba */
+    padding: 5px; /* relleno  */    
+}
+
+.tablaListado .impar td {/*selecciona todos los elementos td dentro de la clase impar
+y dentro de la clase tablaListado*/
+    background-color: #F1F1F1;/* color de fondo  */
+    /*background-color: red; testigo*/
+}
+
+.tablaListado .par td {/*selecciona todos los elementos td dentro de la clase par
+y dentro de la clase tablaListado*/
+    background-color: #E1E1E1;/* color de fondo  */
+    /*background-color: red; testigo*/
+}
+.tablaListado tbody tr:hover td , .tablaListado tbody tr:hover td a{
+        /*
+           a) selecciona los tr del tbody de la clase tablaListado CUANDO 
+              el mouse pasa sobre él.
+           b) NO SE ENTIENDE
+        */
+    background-color: #cfc3c3/*#319BC3*/ !important;/* important: 
+          toma precedencia sobre otras reglas de estilo osea 
+          siempre se aplica este estilo ante otros  */
+    color: #FFF;
+}
+
+.tablaListado .numero {/* selecciona la clase numero dentro de la clase 
+                tablaListado*/
+    text-align: right;/* alinea texto a derecha*/
+}
+
+.tablaListado .campoCorto {/*selecciona la clase campoCorto dentro de la 
+    clase tablaListado*/
+    width: 50px;/* ancho  */
+    text-align: right;/* alineacion a derecha */
+}
+.tablaListado .campoMediano {/*selecciona la clase campoMediano dentro de la clase tablaListado*/
+    width: 130px;/* ancho  */
+    text-align: right;/* alineacion a derecha */
+}
+
+.tablaListado .campoLargo {/*selecciona la clase campoLargo dentro de la clase tablaListado*/
+    width: 180px;/* ancho  */
+    text-align: right;/* alineacion a derecha */
+}
+.iconCenter a img {
+    border:0;
+}
+
+/***********INICIO: AGREGADO para sublistado****************************/
+.tablaisSublistado {
+    width: 100%;
+    
+}
+
+.tablaisSublistado th {/*agregado*/
+    border-bottom: 2px solid #666;
+    border-top: 2px solid #666;
+    /*padding: 3px 0;*/
+    color: #333;
+}
+.tablaisSublistado thead th {/*agregado*/
+    background-color: #D2D2D2;
+    text-align: center;
+}
+.tablaisSublistado tfoot th {/*agregado*/
+    background-color: #D2D2D2;
+    text-align: right;
+    padding: 3px;
+}
+.tablaisSublistado td {/*agregado*/
+    border-bottom: 2px solid #FFF;
+    padding: 2px;
+}
+.tablaisSublistado .impar td {/*agregado*/
+    background-color: #F1F1F1;
+}
+.tablaisSublistado .par td {/*agregado*/
+    background-color: #E1E1E1;
+}
+.tablaisSublistado tbody tr:hover td, .tablaListado tbody tr:hover td a:link {/*agregado*/
+    background-color: #E7D9D9 /*#319BC3*/ !important;
+    color: #FFF;
+}
+.tablaisSublistado .numero {/*agregado*/
+    text-align: right;
+}
+.tablaisSublistado .campoCorto {/*agregado*/
+    width: 50px;
+    text-align: right;
+}
+.tablaisSublistado .campoMediano {/*agregado*/
+    width: 130px;
+    text-align: right;
+}
+.tablaisSublistado .campoLargo {/*agregado*/
+     width: 180px;
+    text-align: right;
+}
+th.camposLargos {/*agregado*/
+     width: 180px;
+    text-align: center;
+}
+th.camposCortos {/*agregado*/
+    width: 50px;
+    text-align: center;
+}
+th.camposMedianos {/*agregado*/
+    width: 130px;
+    text-align: center;
+}
+fieldset.elementoMediano {/*agregado*/
+        border-radius: 5px;
+        border: 2px solid #888;
+        padding: 10px;
+        width:80%;
+        margin:auto;
+}
+
+fieldset.elementoMediano {/*agregado*/
+        border-radius: 5px;
+        border: 2px solid #888;
+        padding: 10px;
+        width:80%;
+        margin:auto;
+}
+legend.elementoMediano {/*agregado*/
+                margin-left: 50px;
+                padding: 0 5px;
+                /*font-size: 20px;*/
+}
+fieldset.elementoCorto {/*agregado*/
+        border-radius: 5px;
+        border: 2px solid #888;
+        padding: 10px;
+        width:60%;
+        margin:auto;
+}
+legend.elementoCorto {/*agregado*/
+                margin-left: 50px;
+                padding: 0 5px;
+               /* font-size: 20px;*/
+}
+fieldset{/*agregado*/
+        border-radius: 5px;
+        border: 2px solid #888;
+        padding: 10px;
+}
+legend {/*agregado*/
+                margin-left: 50px;
+                padding: 0 5px;
+                /*font-size: 20px;*/
+}    
+#formIzquierdo{
+    position:relative;
+    float:left;
+    width: 47%;
+}
+#formDerecho{
+    position:relative;
+    float:right;
+    width:47%;
+}
+#formDetalle{
+    clear:both;
+}
+.rojo{
+    color:red;
+}
+.oculto{
+    display:none;
+}
+.listado{
+    overflow-y:scroll;
+    height:127px;
+}
+.nuevo {
+text-decoration: none;
+}
+.nuevo img {
+vertical-align: middle;
+}
+.detalle {
+    width: 100%;
+    margin: 20px 0;
+}
+.detalle th {
+    border-bottom: 2px solid #666;
+    border-top: 2px solid #666;
+    padding: 3px 0;
+    color: #333;
+}
+.detalle thead th {
+    background-color: #8F8F8F;
+    text-align: center;
+}
+.detalle tfoot th {
+    background-color: #D2D2D2;
+    text-align: right;
+    padding: 3px;
+}
+.detalle td {
+    border-bottom: 2px solid #FFF;
+    padding: 5px;
+    cursor: pointer;
+
+}
+.detalle .impar td {
+    background-color: #F1F1F1;
+}
+.detalle .par td {
+    background-color: #E1E1E1;
+}
+.detalle tbody tr:hover td, .detalle tbody tr:hover td a:link {
+    background-color: #E7D9D9/*#319BC3*/    !important;
+    color: #FFF;
+}
+.detalle .numero {
+    text-align: right;
+}
+.detalle .campoCorto {/*agregado*/
+    width: 50px;
+    text-align: right;
+}
+.detalle .campoMediano {/*agregado*/
+    width: 130px;
+    text-align: right;
+}
+.detalle .campoLargo {/*agregado*/
+        width: 180px;
+    text-align: right;
+}
+.detalle2 {
+    width: 100%;
+    
+}
+.detalle2 th {
+    border-bottom: 2px solid #666;
+    border-top: 2px solid #666;
+    /*padding: 3px 0;*/
+    color: #333;
+}
+.detalle2 thead th {
+    background-color: #D2D2D2;
+    text-align: center;
+}
+.detalle2 tfoot th {
+    background-color: #D2D2D2;
+    text-align: right;
+    padding: 3px;
+}
+.detalle2 td {
+    border-bottom: 2px solid #FFF;
+    padding: 2px;
+}
+.detalle2 .impar td {
+    background-color: #F1F1F1;
+}
+.detalle2 .par td {
+    background-color: #E1E1E1;
+}
+.detalle2 tbody tr:hover td, .detalle tbody tr:hover td a:link {
+    background-color: #E7D9D9/*#319BC3*/ !important;
+    color: #FFF;
+}
+.detalle2 .numero {
+    text-align: right;
+}
+.detalle2 .campoCorto {/*agregado*/
+    width: 50px;
+    text-align: right;
+}
+.detalle2 .campoMediano {/*agregado*/
+    width: 130px;
+    text-align: right;
+}
+.detalle2 .campoLargo {/*agregado*/
+     width: 180px;
+    text-align: right;
+}
+
+/***********FIN: AGREGADO para sublistado****************************/
+table{
+    font-family: Verdana; /* Establecemos la tipografía del documento */
+    font-size: 13px;  
+}
+
+
+/* ------------------------ FIN: Estilo de la tabla ------------------------ */
+

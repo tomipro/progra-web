@@ -1,0 +1,247 @@
+/*
+
+http://librosweb.es/libro/css/capitulo_12/estructura_o_layout.html
+
+Clear:
+http://librosweb.es/referencia/css/clear.html
+
+float y clear
+http://www.sidar.org/recur/desdi/mcss/manual/ejemplos/float.html 
+
+display
+http://librosweb.es/referencia/css/display.html
+
+*/
+
+
+/*
+CALCULADORA para el color
+http://www.calculatorcat.com/free_calculators/color_slider/rgb_hex_color_slider.phtml
+http://www.color-hex.com/
+
+VER ONLINE TIPOS DE LETRAS
+http://www.cssfontstack.com/
+
+*/
+body {
+    background-color: rgb(119, 212, 208);
+  
+  }
+
+/* ------------------------ INICIO: configuraciones de Layouts (dispocicion de la pagina) ------------------------ */
+/* Clase para centrar el contenido de este elemento */
+.clearOne {
+    clear: both; /*no admite flotante a izquierda y a derecha*/
+}
+/* Clase para centrar el contenido de este elemento */
+.envoltura {
+    margin: 0 auto; /* Eliminamos los margenes superior/inferior, y a los laterales autom�tico => centramos horizontalmente*/
+}
+
+/* Envoltura Principal de la pagina */
+#envolturaPrincipal {
+    width: 95%; /* Establecemos el ancho al total del navegador */
+   
+}
+#menuNavegacion{ /*centrar el men� que estar� dentro */
+   margin-top: -2px;
+   /*
+    margin: 8 auto; 
+    width: 100%;
+    height: 100%; 
+*/
+
+  
+}
+
+    /* ------------------ INICIO: Parte Superior de la pagina ------------------ */
+    #top {
+        height: 50px; /* Altura fija de la parte superior */
+        width:100%;
+        background-color: #C4C4C4;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+        .logo {
+            width: 8%;
+            height: 100%;
+        
+        }
+
+        #logo1 {
+
+            
+            float: right;
+         
+        }
+        
+        #logo2 {
+           
+            float: right;
+          
+        }
+
+        #cabecera {
+            
+            padding-left: 4px;
+            float: left;
+          
+            height: 100%;
+           
+        }
+                
+    /* ------------------ FINAL: Parte Superior de la pagina ------------------ */
+
+
+    /* ------------------ INICO: Parte Media de la pagina ------------------ */
+    #envolturaContenido {
+        width: 100%;
+        /*clear: both;  */        
+        margin-bottom: 20px;
+
+    }
+    
+        .panel {
+            width: 25%;
+        }
+        
+        .contenido100 {/*fija el ancho 100 con respecto a su padre*/
+            width: 98%;
+            padding: 10px;            
+           
+        }
+        .contenidoFD {/*fija el ancho y empuja la caja de la derecha, 
+            la manda abajo*/
+           
+            padding: 10px;            
+            float: right;
+
+            
+        }
+        .contenidoFI {/*fija el ancho y empuja la caja de la derecha, 
+            la manda abajo*/
+           
+            padding: 10px;            
+            float: left;
+            
+        }
+        .contenidoFI100 {/**/
+            width: 100%;
+            padding: 10px;            
+            float: left;
+
+
+
+        }
+        .contenidoFI20 {
+            width: 20%;
+            padding: 10px;           
+            float: left;
+        }
+        .contenidoFI30 {
+            width: 30%;
+            padding: 10px;           
+            float: left;
+        }
+
+        .contenidoFI40 {
+            width: 40%;
+            padding: 10px;            
+            float: left;
+        }
+        .contenidoFI50 {
+            width: 50%;
+            padding: 10px;           
+            float: left;
+        }
+
+        .contenidoFI60 {
+            width: 60%;
+            padding: 10px;           
+            float: left;
+        }
+         .contenidoFI70 {
+            width: 70%;
+            padding: 10px;           
+            float: left;
+            height: auto;
+        }
+        .contenidoFI75 {
+            width: 75%;
+            padding: 10px;           
+            float: left;
+            height: auto;
+        }
+        .contenidoFI80 {
+            width: 80%;
+            padding: 10px;           
+            float: left;
+        }
+        .contenidoFI98 {
+            width: 98%;
+            padding: 10px;           
+            float: left;
+            display: flex;   /* muestra a todos las cajas que estan dentro con 
+            la misma altura (con la altura del mas alto)*/
+            margin-bottom: 10px;
+        }
+
+        #panelIzquierdo {
+            float: left;
+            /*display: none;
+            */
+        }
+        
+        #contenidoPrincipal {
+            float: left;
+            width: 100%;
+            background-color: #EEE;
+            margin-bottom: 10px;
+        }
+        #contenidoPrincipal .contenido {
+            /*min-height: 500px;*/
+
+        }
+        
+        #panelDerecho {
+            float: right;
+            width: 25%;
+            display: none;
+        }
+        .limpiar{
+            clear: both;
+        }
+        .divDerecho{
+            position:relative;
+            float:right;
+            width:47%;
+        }
+        .divIzquierdo{
+            position:relative;
+            float:left;
+            width: 47%;
+        }
+        
+    /* ------------------  FINAL: Parte Media de la pagina ------------------ */
+    
+    /* ------------------ INICO: Parte Inferior de la pagina ------------------ */
+    #piePagina {
+        background-color: #C4C4C4;
+        height: 36px;
+        clear: both; /*no admite flotante a izquierda y a derecha*/
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        
+    }
+    #piePagina p {
+        font-weight: bold;
+        color: #666;
+        margin: 0;
+
+    }
+    /* ------------------  FINAL: Parte Inferior de la pagina ------------------ */
+
+/* ------------------------ FIN: configuraciones de Layouts (dispocicion de la pagina) ------------------------ */

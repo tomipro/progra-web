@@ -1,0 +1,141 @@
+<HTML>
+<HEAD>
+	<TITLE>Formularios</TITLE>
+<!--
+http://www.virtualnauta.com/es/html/formularios-html.php
+
+http://www2.uca.es/manual-html/form.htm
+
+http://www.librosweb.es/xhtml/
+	
+-->
+</HEAD>
+<body>
+<!--////////////////////////////////////////////////////////////////////////////////-->
+	<H5>Crea un control que nos permite ingresar un texto en una línea.</H5>
+	<form action="32 FORM GET ARCHIVO DESTINO.php" method="get">
+		<label>Nombre:</label> 
+		<input type="text" name="nombre"><br/>
+		<br/>
+		<label>Apellido:</label> 
+		<input type="text" name="apellido"><br/><br/>
+		<label>Edad:</label> 
+		<input type="text" name="edad"><br/><br/>
+	  
+		<input type="submit" value="Enviar"></input>
+		<input type="reset" value="Borrar"></input>
+	</form>
+	<br><H6>Radio botones</H6></br>
+<!--////////////////////////////////////////////////////////////////////////////////-->
+	<form id='23' action="32 FORM GET ARCHIVO DESTINO.php" method="get">
+		<br>¿Edad?</br>
+		<input type="radio" name="edad" value="menor" id="edad1"/>
+		<label>menor de 17(menor)</label>
+		<br>
+		<input type="radio" name="edad" value="adulto"id="edad2"/>
+		<label>entre 18 y 60(adulto)</label>
+		<br>
+		<input type="radio" name="edad" value="mayor"id="edad3"/>
+		<label>mayor de 61(mayor)</label>
+		<input type="submit" value="Enviar"></input>
+		<input type="reset" value="Borrar"></input>
+<!--</form>
+-->
+<!--////////////////////////////////////////////////////////////////////////////////-->
+	<br><H5>Checkbox (casillas de verificación)</H5></br>
+<!--<form action="32 FORM GET ARCHIVO DESTINO.php" method="get">
+-->
+	<br><label>¿Pasatiempos?</label></br>
+	<!--
+		Si los name son iguales, deberé indicar que en el servidor lo carge en un vector; esto
+		se lo indico agregando corchetes[].
+		si no le indico corchetes, solo se recibirá del lado del servidor el datos de labelultima variable.
+	-->
+	   <input type="checkbox" name="pasa[]" value="tvvalor" id="pasa1"></input><label for="pasa1">TVv</label><br/>
+	   <input type="checkbox" name="pasa[]" value="libros"></input><label>Libros</label><br/>
+	   <input type="checkbox" name="pasa[]" value="musica"></input><label>Música</label><br/>
+	   <input type="checkbox" name="pasa[]" value="otros"></input><label>Otros</label><br/>
+	   <input type="submit" value="Enviar"></input>
+		<input type="reset" value="Borrar"></input>
+	   
+	</form>
+	
+	<br><H5>Checkbox (casillas de verificación CON ARREGLO)</H5></br>
+	<form action="32 FORM GET ARCHIVO DESTINO.php" method="get">
+	<br><label>¿Pasatiempos?</label></br>
+	   <input type="checkbox" name="hobies[]" value="tvvalor" id="pasa1"></input><label for="pasa1">TVv</label><br/>
+	   <input type="checkbox" name="hobies[]" value="libros"></input><label>Libros</label><br/>
+	   <input type="checkbox" name="hobies[]" value="musica"></input><label>Música</label><br/>
+	   <input type="checkbox" name="hobies[]" value="otros"></input><label>Otros</label><br/>
+	   <input type="submit" value="Enviar"></input>
+		<input type="reset" value="Borrar"></input>
+	   
+	</form>
+<!--////////////////////////////////////////////////////////////////////////////////-->
+<!--
+
+debería pasarlo por post para que no se vea el password
+-->	
+	<form action="32 FORM GET ARCHIVO DESTINO.php" method="get">
+		Nombre: <input type="text" name="nombre">
+		<br>
+		Contraseña: <input type="password" name="secreto">
+		<br>
+		<input type="submit" value="Enviar"></input>
+		<input type="reset" value="Borrar"></input>
+	</form>
+<!--////////////////////////////////////////////////////////////////////////////////-->
+<br><H5>Lista Despleglables</H5></br>
+	<form action="32 FORM GET ARCHIVO DESTINO.php" method="get">
+	   <select name="continente" id="IDContinente">
+		  <option value="america">América</option>
+		  <option value="asia" selected="selected">Asia</option>
+		  <option value="europa">Europa</option>
+		  <option value="oceania">Oceanía</option>
+		  <option value="africa">África</option>
+	   </select>
+	   <input type="submit" value="Enviar"></input>
+		<input type="reset" value="Borrar"></input>
+	   
+	</form>
+	
+	<br><H5>Lista Despleglables(grupo)</H5></br>
+	<form action="32 FORM GET ARCHIVO DESTINO.php" method="get">
+	<!--
+	 LE INDICO QUE SE LO VOY A ENVIAR EN UN VECTOR COLOCANDO EL CORCHETE EN EL NOMBRE DEL NAME DEL SELECTOR
+	-->
+	   <select name="IDgastos[]" id="IDgastos" multiple>
+	   <optgroup label="limpieza">
+		  <option value="procenex">Limpieza</option>
+		  <option value="cif" selected="cif">Impuestos</option>
+		  
+		</optgroup>
+		<optgroup label="impuestos">
+		  <option value="inmobiliario">Inmobiliario</option>
+		  <option value="tasa muni" >Tasa Muni</option>
+		  
+		</optgroup>
+	   </select>
+	   <input type="submit" value="Enviar"></input>
+		<input type="reset" value="Borrar"></input>
+	   
+	</form>
+	
+		<br><H5>Lista Despleglables(seleccion multiple)</H5></br>
+	<form action="32 FORM GET ARCHIVO DESTINO.php" method="get" id="continente">
+	<select name="continente[]" id="IDContinente" multiple>
+		  <option value="america">América</option>
+		  <option value="asia" selected="selected">Asia</option>
+		  <option value="europa">Europa</option>
+		  <option value="oceania">Oceanía</option>
+		  <option value="africa">África</option>
+	   </select>
+	   
+	   <input type="submit" value="Enviar"></input>
+		<input type="reset" value="Borrar"></input>
+	   
+	</form>
+	
+<!--////////////////////////////////////////////////////////////////////////////////-->
+</body>
+ </HTML> 
