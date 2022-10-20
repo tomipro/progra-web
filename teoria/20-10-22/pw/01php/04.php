@@ -50,8 +50,8 @@
          array_push($arrN, "tres");
          array_push($arrN, "cuatro");
 
-         print("tipo : ".gettype($numeros)."</br>");
-         print("Tamanio de arreglo: ".sizeof($numeros) );
+         print("tipo : ".gettype($arrN)."</br>");
+         print("Tamanio de arreglo: ".sizeof($arrN));
 
          print("</br>-------- Recorrido con foreach --------</br>");
          foreach( $arrN as $num ) {           // recorrido del array
@@ -213,11 +213,11 @@
 
       funcioneDebug();
 
-
+      echo "<br><a href='./03.php'>Ejemplo anterior</a><br>";
+      echo "<a href='./05.php'>Siguiente ejemplo</a>";
   
 
    
    }
    
    main();
-?>
