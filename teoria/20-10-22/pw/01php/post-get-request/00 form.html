@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<!--////////////////////////////////////////////////////////////////////////////////-->
+	<H4>Formulario de carga de datos</H4>
+	<form action="01 recibirDatos.php" method="post">
+		<label>Nombre:</label> 
+		<input type="text" name="nombre"><br/>
+		<br/>
+		<label>Apellido:</label> 
+		<input type="text" name="apellido"><br/><br/>
+		<label>Edad:</label> 
+		<input type="text" name="edad"><br/><br/>
+	  
+		<input type="submit" value="Enviar"></input>
+		<input type="reset" value="Borrar"></input>
+	</form>
+<hr>
+<!--////////////////////////////////////////////////////////////////////////////////-->
+    <H4>Radio botones</H4>
+	<form id='23' action="01 recibirDatos.php" method="get">
+		<br>Edad?</br>
+		<input type="radio" name="edad" value="menor" id="edad1"/>
+		<label>menor de 17(menor)</label>
+		<br>
+		<input type="radio" name="edad" value="adulto"id="edad2"/>
+		<label>entre 18 y 60(adulto)</label>
+		<br>
+		<input type="radio" name="edad" value="mayor"id="edad3"/>
+		<label>mayor de 61(mayor)</label>
+		<input type="submit" value="Enviar"></input>
+		<input type="reset" value="Borrar"></input>
+	</form>
+<hr>
+<!--////////////////////////////////////////////////////////////////////////////////-->
+	<H4>Checkbox (casillas de verificación CON ARREGLO)</H4>
+	<label>¿Pasatiempos?</label></br>
+	<form action="01 recibirDatos.php" method="get">
+		
+		<!--
+			Si los name son iguales, debería indicar que en el servidor lo carge en un vector; esto
+			se lo indico agregando corchetes[].
+			si no le indico corchetes, solo se recibir del lado del servidor el datos de label ultima variable.
+		-->
+	   <input type="checkbox" name="pasatiempo[]" value="tv" id="pasa1"></input>
+	   <label for="pasa1">TVv</label><br/>
+	   <input type="checkbox" name="pasatiempo[]" value="libros"></input><label>Libros</label><br/>
+	   <input type="checkbox" name="pasatiempo[]" value="musica"></input><label>Música</label><br/>
+	   <input type="checkbox" name="pasatiempo[]" value="otros"></input><label>Otros</label><br/>
+	   <input type="submit" value="Enviar"></input>
+	   <input type="reset" value="Borrar"></input>
+	   
+	</form>
+<hr>	
+<!--////////////////////////////////////////////////////////////////////////////////-->
+<!--
+
+deberia pasarlo por post para que no se vea el password
+-->	
+	<H4>Login</H4>
+	<form action="01 recibirDatos.php" method="get">
+		Usuario: <input type="text" name="usuario">
+		<br>
+		Contraseña: <input type="password" name="pass">
+		<br>
+		<input type="submit" value="Enviar"></input>
+		<input type="reset" value="Borrar"></input>
+	</form>
+	<hr>
+<!--////////////////////////////////////////////////////////////////////////////////-->
+    <H4>Lista Despleglables</H4>
+	<form action="01 recibirDatos.php" method="get">
+	   <select name="continente" id="IDContinente">
+		  <option value="america">America</option>
+		  <option value="asia" selected="selected">Asia</option>
+		  <option value="europa">Europa</option>
+		  <option value="oceania">Oceania</option>
+		  <option value="africa">Africa</option>
+	   </select>
+	   <input type="submit" value="Enviar"></input>
+		<input type="reset" value="Borrar"></input>	   
+	</form>
+	<hr>
+	
+	<H4>Lista Despleglables(grupo)</H4>
+	<form action="01 recibirDatos.php" method="get">
+	<!--
+	 LE INDICO QUE SE LO VOY A ENVIAR EN UN VECTOR COLOCANDO EL CORCHETE EN EL NOMBRE DEL NAME DEL SELECTOR
+	-->
+	   <select name="gastos[]" id="IDgastos" multiple>
+	   <optgroup label="limpieza">
+		  <option value="Detergente">Detergente</option>
+		  <option value="Lavandina" selected="cif">Lavandina</option>
+		  
+		</optgroup>
+		<optgroup label="impuestos">
+		  <option value="inmobiliario">Inmobiliario</option>
+		  <option value="tasa muni" >Tasa Muni</option>
+		  
+		</optgroup>
+	   </select>
+	   <input type="submit" value="Enviar"></input>
+		<input type="reset" value="Borrar"></input>
+	   
+	</form>
+	<hr>
+	<H4>Lista Despleglables(seleccion multiple)</H4><
+	<form action="01 recibirDatos.php" method="get" id="continente">
+	<select name="materias[]" id="IDMateria" multiple>
+		  <option value="Algebra">Algebra</option>
+		  <option value="Informática" selected="selected">Informática</option>
+		  <option value="Física">Física</option>
+		  <option value="Quimica">Quimica</option>
+		  <option value="Quimica">Quimica</option>
+	   </select>
+	   
+	   <input type="submit" value="Enviar"></input>
+		<input type="reset" value="Borrar"></input>
+	   
+	</form>
+	
+<!--////////////////////////////////////////////////////////////////////////////////-->
+</body>
+ </HTML> 
