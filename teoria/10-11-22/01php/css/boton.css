@@ -1,0 +1,70 @@
+ .botones a img{
+    border: 0;
+ }
+a{ /*selecciona los a */
+    text-decoration:none; /*elimina la decoración tipica de hipevinculo*/
+}
+
+.botones div.marcoBotones {/*selecciona los div de la clase marcoBotones de 
+        */
+    background-color: transparent;/*  */
+    padding: 6px;   /* padding arriba */
+    margin-top: 5px;/*  */
+    text-align: right;/*  */
+}
+
+ .botones .boton {/*selecciono la clase boton de la clase botones de la
+ clase abmform*/ 
+    background-color: #969696 /*#E6E6E6*/;/* color de fondo  */
+    border: 1px solid #969696;/* borde */
+    color: #000;/*#F8FAFC*//*#44708F*/ /*color */
+    font-size: 14px;/* tamaño de letra */
+    font-weight: bold;/* peso de letra  */
+    text-align: center;/* alineamento de texto */
+    border-radius: 5px;/* css3 borde redondeado */
+    -moz-border-radius: 5px;/*css3 borde redondeado para mozilla */
+    -webkit-border-radius: 5px;/* css3 borde redondeado para safari*/
+    box-shadow  : 0 1px 2px #303D47;/*css3  sombra */
+    -moz-box-shadow: 0 1px 2px #303D47;/*css3  sombra mozilla  */
+    -webkit-box-shadow: 0 1px 2px #303D47;/* css3 sombra safari */
+    padding-left: 25px;/* relleno  */
+}
+ .botones .boton:hover {/*seleciona cuando pasa el mouse sobre la clase
+         boton dentro de la clase botones */
+    /*cambia de apariencia cuando el mouse esta sobre el */
+    background-color: #787878;/*#E7D9D9*//*#DCDCDC*//*  */
+    border: 1px solid #1F6191;/*  */
+    color: #FFF;/*#1F6191*//*  */
+    cursor: pointer;/* puntero mouse  */
+}
+
+ .botones .boton:active {/* aplica el estilo cuando aprieta
+            el boton del mouse */
+            /* da un efecto que parece que el boton se hunde  */
+    box-shadow: 0 1px 2px #303D47 inset;/*css3  sombra */
+    -moz-box-shadow: 0 1px 2px #303D47 inset;/*css3  sombra mozilla*/
+    -webkit-box-shadow: 0 1px 2px #303D47 inset;/*css3  sombra safari*/
+}
+
+.botones .aceptar {
+/*selecciona boton  aceptar*/
+    background: url("../img/aceptar_16.png") no-repeat scroll 5px 50% transparent;
+}
+ .botones .modificar {
+/*selecciona boton modificar */
+    background: url("../img/editar_16.png") no-repeat scroll 5px 50% transparent;
+}
+ .botones .cancelar {
+/*selecciona el boton cancelar*/
+    background: url("../img/cancelar_16.png") no-repeat scroll 5px 50% transparent;
+    margin-left: 10px;
+}
+ .botones .eliminar {
+/*selecciona el boton eliminar*/
+    background: url("../img/basura_16.png") no-repeat scroll 5px 50% transparent;
+    margin-left: 50px;
+}
+
+.botones .boton{
+   margin-top: 4px;
+}

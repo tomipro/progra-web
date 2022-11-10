@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="es">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>AJAX Inicial</title>
+	<!--
+<link rel="stylesheet" type="text/css" href="estilos.v2.css">
+-->
+	<link type="text/css" href="estilos.v2.css" rel="stylesheet" />
+</head>
+
+<body>
+
+	<div class="abm-form">
+
+		<div class="marcoBotones">
+			<div class="botones">
+				<input type="button" id="parrafo" name="parrafo" value="Parrafo" class="boton aceptar"
+					onclick='loadContTextAjax("parrafo.php", "idFrase")' />
+				<input type="button" id="parrafo_elimina" name="parrafo" value="Eliminar" class="boton eliminar"
+					onclick='setDataIntoNode("idFrase","")' />
+			</div>
+		</div>
+		<hr><br>
+		<div class="marcoBotones">
+			<div class="botones">
+				<input type="button" id="tabla" name="tabla" value="Tabla" class="boton aceptar"
+					onclick='loadContTextAjax("tabla.php", "idTabla")' />
+
+				<input type="button" id="parrafo_elimina" name="parrafo" value="Eliminar" class="boton eliminar"
+					onclick='setDataIntoNode("idTabla","")' />
+			</div>
+		</div>
+		<hr><br>
+
+		<div class="botones">
+			<input type="button" id="video" name="video" value="Video" class="boton aceptar"
+				onclick='loadContTextAjax("video.php", "idVideo")' />
+			<input type="button" id="parrafo_elimina" name="parrafo" value="Eliminar" class="boton eliminar"
+				onclick='setDataIntoNode("idVideo","")' />
+		</div>
+		<hr><br>
+
+
+		<div class="parr" id="idFrase">
+
+		</div>
+
+		<div id="idTabla" class="tabla-listado">
+
+		</div>
+
+		<div id="idVideo" class="video">
+
+		</div>
+		<script type="text/javascript" src="ajax.js"></script>
+
+</body>
+
+</html>

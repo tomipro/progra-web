@@ -1,0 +1,114 @@
+/* ------------------------ INICIO: Configuracion del Menu ------------------------ */
+/* Menu */
+
+
+/* Seleccionamos TODOS los LIs (items de las listas) dentro del menu */
+.navegacion li {
+    background-color: #787878; /* Establecemos el color de fondo de los li: #787878 */
+    list-style: none; /* Eliminamos la "viñetas" de las listas */
+    z-index: 10;  /* Establecemos la posicion en Z (capa)("distancia entre la pantalla y el usuario"). 
+                     Cuanto mayor es el valor, mayor se acerca al usuario 
+                  */
+    position: relative;  /* Establecemos la posicion de los LIs (items) a relativa, 
+                        así posteriormente estableceremos a los ULs 
+                     internos, la posicion absoluta respecto de los "padres" relativos 
+                        http://librosweb.es/referencia/css/position.html
+                     */
+    text-align: left;  /* Establecemos la alineación izquierda del texto
+                        dentro de los LIs 
+                        */
+}
+
+/* Seleccionamos TODOS los A (links) dentro del menu */
+.navegacion li a {
+    color: #FFF;  /* Establecemos el color de la fuente 
+                 (es el texto de cada elemento del menu): blanco */
+    text-decoration: none; /* Eliminamos el subrayado tipico de los links*/
+    padding: 10px 15px; /* Establecemos un relleno superior/inferior
+              de 10px c/u, y laterales izq/der de 15px c/u */
+
+    display: block; /* Establecemos la forma en que el navegador 
+                "dibuja" los Links: como bloques en lugar de en-linea 
+                       http://librosweb.es/referencia_css/display.html 
+                     */
+    white-space: nowrap; /* Establecemos que los espacios en 
+                            blanco NO se "generen un ENTER", y 
+                            así el texto de c/item del menu se escribe 
+                            en una sola línea 
+                            http://librosweb.es/referencia_css/white_space.html 
+                         */
+ 
+}
+
+.navegacion li:hover {/* estilo del li cuando el mouse pasa sobre él 
+                http://librosweb.es/libro/css_avanzado/capitulo_3/pseudo_clases.html
+                */         
+    background-color: #333;/*color de fondo */
+}
+.navegacion > li {  /* > selecciona sólo los hijos directos de
+                       navegacion que sean li
+                     http://librosweb.es/css/capitulo_2/selectores_avanzados.html*/
+    display: inline-block; /* en bloques de linea verticales
+                              (los apilo en columna) 
+                            */
+                            /*background-color: olive;*//*testigo*/
+}
+.navegacion > li:last-child {/*selecciona el ultimo hijo directo 
+                   li dentro de navegacion*/
+   border-right: none;
+
+   /*background-color: olive;*//*testigo*/
+}
+
+.navegacion li ul {/*selecciono todos los ul de los li de navegacion*/
+     
+    display:none;
+    position: absolute;/*The element is positioned relative 
+      to its first positioned (not static) ancestor element  */
+    /*http://www.w3schools.com/cssref/pr_class_position.asp*/
+}
+.navegacion li:hover > ul {/*cuando pasa el mouse sobre los 
+                li de navegacion seleciona los ul */
+            
+    display: block;/*muestra en bloque*/
+
+}
+
+
+.navegacion > li ul{/*selecciona todos los ul de los li
+                   hijos inmediatos de navegacion*/
+    top: 0%; /* arriba entonces desplaza hacia abajo. 
+             Lo sacamos porque queda mejor sin desplaz*/
+    left: 100%;/*100 % a la izquierda*/
+    padding-left: 1px;/*padding a la izquierda*/
+}
+.navegacion li.tieneSubMenu {/*selecciona 
+         todos los li con clase tieneSubMenu de la navegacion*/
+    background: url("../img/flecha-submenu_16.png") no-repeat scroll 100% 50% #787878;
+    padding-right: 20px;    
+}
+.navegacion > li .nivel1 {/*selecciona la clase nivel1 de los
+            li hijos inmediatos de navegacion */
+    top: 100%; /* lo corre 100 % el tamaño del li hacia abajo*/
+    left: 0;
+    padding-top: 1px;
+    padding-left: 0;
+}
+
+.navegacion li.tieneSubMenu:hover {/*selleciona li.tieneSubMenu 
+        cuando pasa el mouse*/
+    background-color: #333;
+}
+
+.navegacion li.tieneSubMenu > a {/*selecciona los a hijos inmediatos 
+        de  .navegacion li.tieneSubMenu*/  
+    cursor: default;/*coloca el cursor del mouse en default*/
+}
+
+li{/*Transparencia para los li*/
+    opacity: 0.9;
+}
+#menuNavegacion{
+    font-family: Verdana; /* Establecemos la tipografía del documento */
+    font-size: 13px;  
+}

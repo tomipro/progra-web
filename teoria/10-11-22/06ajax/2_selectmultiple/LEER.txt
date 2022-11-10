@@ -1,0 +1,43 @@
+
+1) VERIFICAR
+	en conexion.php
+	verificar la conexion a la base de datos mysql
+	
+	verificar en la base de datos que se encuentra la tabla correspondiente
+        NOTA: Funciona con la base de datos ubicacion
+		ejecutar script ubicacion.sql para crear base de datos en mysql
+
+
+2)SI SE QUIERE AGREGAR OTRO SELECT DEPENDIENTE
+A)
+	en selectDependientes.php
+	agregar variables
+
+	$labelSelect4
+	$idSelect4
+	
+	..y en codigo html, dentro del body, el codigo del select en el orden correcto
+	
+	
+				<p>
+					<label class="left"><?php echo $labelSelect4;?></label>
+					<span>
+						<select disabled="disabled" onChange='cargarSelect(this.id)' name=<?php echo $idSelect4 ?> id=<?php echo $idSelect4;?>>
+							<option value="0"><?php echo $leyendaNoDisponibleSeleccion?></option>
+						</select>
+					</span>
+				</p>
+	
+B)
+	en selectDependientes.js
+	
+	listadoSelects[4]=
+	
+C)
+	en selectDependientesProceso.php
+	
+	"id del select"=>"consulta sql"
+	
+	"id del select"=>"nombre de la tabla"
+
+	

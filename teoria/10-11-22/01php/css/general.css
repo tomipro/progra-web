@@ -1,0 +1,31 @@
+
+/* ------------------------ INICIO: configuraciones generales ------------------------ */
+
+/* Selector universal: son seleccionados TODOS los elementos del documento html */
+* {
+    margin: 0; /* Reseteamos los margenes que traen por defecto cada navegador */
+    padding: 0; /* Reseteamos los rellenos que traen por defecto cada navegador */
+}
+/* Agregamos la barra/scroll lateral siempre */
+html {
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+}
+/* Seleccionamos el BODY del documento */
+body {
+    font-family: Verdana; /* Establecemos la tipografía del documento */
+    font-size: 12px; /* Establecemos el tamaño de la tipografía */
+}
+
+/* Seleccionamos los DIVs (bloques), porciones de contenido del documento */
+div {
+    position: relative; /* Establecemos la posición a relativa */
+}
+
+/* Seleccionamos parrafos del documento */
+p {
+    margin: 10px 0; /* Establecemos los margenes superior/inferior a 10px, y lo laterales izq/der a cero 0px */
+    line-height: 16px; /* Establecemos la altura del interlineado */
+}
+
+/* ------------------------ FIN: configuraciones generales ------------------------ */

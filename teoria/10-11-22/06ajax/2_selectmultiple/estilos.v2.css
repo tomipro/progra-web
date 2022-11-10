@@ -1,0 +1,371 @@
+/* ------------------------ INICIO: configuraciones generales ------------------------ */
+
+/* Selector universal: son seleccionados TODOS los elementos del documento html */
+* {
+    margin: 0; /* Reseteamos los margenes que traen por defecto cada navegador */
+    padding: 0; /* Reseteamos los rellenos que traen por defecto cada navegador */
+}
+
+/* Seleccionamos el BODY del documento */
+body {
+    font-family: Verdana; /* Establecemos la tipografía del documento */
+    font-size: 12px; /* Establecemos el tamaño de la tipografía */
+}
+
+/* Seleccionamos los DIVs (bloques), porciones de contenido del documento */
+div {
+    position: relative; /* Establecemos la posición a relativa */
+}
+
+/* Seleccionamos parrafos del documento */
+p {
+    margin: 10px 0; /* Establecemos los margenes superior/inferior a 10px, y lo laterales izq/der a cero 0px */
+    line-height: 16px; /* Establecemos la altura del interlineado */
+}
+
+/* ------------------------ FIN: configuraciones generales ------------------------ */
+
+/* ------------------------ INICIO: configuraciones de Layouts (dispocicion de la pagina) ------------------------ */
+
+/* Clase para centrar el contenido de este elemento */
+.envoltura {
+    margin: 0 auto; /* Eliminamos los margenes superior/inferior, y a los laterales automático => centramos horizontalmente*/
+}
+
+/* Envoltura Principal de la pagina */
+#envoltura-principal {
+    width: 90%; /* Establecemos el ancho al total del navegador */
+}
+
+    /* ------------------ INICIO: Parte Superior de la pagina ------------------ */
+    #top {
+        height: 50px; /* Altura fija de la parte superior */
+        background-color: #C4C4C4;
+        margin-bottom: 20px;
+    }
+    
+        .logo {
+            width: 15%;
+            height: 100%;
+        }
+
+        #logo1 {
+            float: left;
+        }
+        
+        #logo2 {
+            float: right;
+        }
+
+        #cabecera {
+            float: left;
+            width: 70%;
+            height: 100%;
+        }
+                
+    /* ------------------ FINAL: Parte Superior de la pagina ------------------ */
+
+    /* ------------------ INICO: Parte Media de la pagina ------------------ */
+    #envoltura-contenido {
+        width: 100%;
+        clear: both;
+    }
+    
+        .panel {
+            width: 25%;
+        }
+        
+        .relleno {
+            padding: 10px;
+        }
+
+        #panelIzquierdo {
+            float: left;
+            display: none;
+        }
+        
+        #contenido-principal {
+            float: left;
+            width: 100%;
+            background-color: #EEE;
+            margin-bottom: 20px;
+        }
+        
+        #panelDerecho {
+            float: right;
+            display: none;
+        }
+        
+    /* ------------------  FINAL: Parte Media de la pagina ------------------ */
+    
+    /* ------------------ INICO: Parte Inferior de la pagina ------------------ */
+    #pie-pagina {
+        background-color: #C4C4C4;
+        height: 36px;
+        clear: both;
+        text-align: center;
+    }
+    #pie-pagina p {
+        font-weight: bold;
+        color: #666;
+        margin: 0;
+    }
+    /* ------------------  FINAL: Parte Inferior de la pagina ------------------ */
+
+/* ------------------------ FIN: configuraciones de Layouts (dispocicion de la pagina) ------------------------ */
+
+
+.titulo-central {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1B1A67;
+}
+    
+/* ------------------------ INICIO: Configuracion del Menu ------------------------ */
+/* Menu */
+#menu-navegacion {
+    text-align: center;
+    padding-top: 8px;
+}
+
+.navegacion {
+    
+}
+
+/* Seleccionamos TODOS los LIs (items de las listas) dentro del menu */
+.navegacion li {
+    background-color: #787878; /* Establecemos el color de fondo: negro */
+    list-style: none; /* Eliminamos la "viñetas" de las listas */
+    z-index: 10;  /* Establecemos la posicion en Z ("distancia entre la pantalla y el usuario"). Cuanto mayor es el valor, mayor se acerca al usuario */
+    position: relative;  /* Establecemos la posicion de los LIs (items) a relativa, así posteriormente estableceremos a los ULs internos, la posicion absoluta respecto de los "padres" relativos */
+    text-align: left;  /* Establecemos la alineación de los textos dentro de los LIs */
+}
+
+/* Seleccionamos TODOS los A (links) dentro del menu */
+.navegacion li a {
+    color: #FFF;  /* Establecemos el color de la fuente: blanco */
+    text-decoration: none; /* Eliminamos el subrayado */
+    padding: 10px 15px; /* Establecemos un relleno superior/inferior de 10px c/u, y laterales izq/der de 15px c/u */
+    display: block; /* Establecemos la forma en que el navegador "dibuja" los Links: como bloques en lugar de en-linea */
+    white-space: nowrap; /* Establecemos que los espacios en blanco NO se "generen un ENTER", y así el texto de c/item del menu se escribe en una sola línea */
+}
+
+.navegacion li:hover {
+    background-color: #333;
+}
+
+.navegacion > li {
+    display: inline-block;
+}
+
+.navegacion > li:last-child {
+    border-right: none;
+}
+
+.navegacion li ul {
+    display: none;
+    position: absolute;
+}
+
+.navegacion li:hover > ul {
+    display: block;
+}
+
+.navegacion > li ul {
+    top: 25%;
+    left: 100%;
+    padding-left: 1px;
+}
+
+.navegacion li.tieneSubMenu {
+    background: url("../img/flecha-submenu.png") no-repeat scroll 100% 50% #787878;
+    padding-right: 20px;
+}
+
+.navegacion li.tieneSubMenu:hover {
+    background-color: #333;
+}
+
+.navegacion li.tieneSubMenu > a {
+    cursor: default;
+}
+
+.navegacion > li .nivel1 {
+    top: 100%;
+    left: 0;
+    padding-top: 1px;
+    padding-left: 0;
+}
+
+/* ------------------------ FINAL: Configuracion del Menu ------------------------ */
+
+
+/* ------------------------ INICIO: Estilo de los formularios ------------------------ */
+.abm-form .mensaje_error {
+    color: #EE0000;
+}
+.abm-form .obligatorio:before {
+    content: "* ";
+}
+.abm-form .texto_informativo {
+    color: #EE0000;
+    display: block;
+    text-align: right;
+    padding-bottom: 5px;
+}
+.abm-form {
+    background: #DDD;
+    padding: 10px 20px;
+    /* width:330px; */
+}
+.abm-form fieldset {
+    border-radius: 5px;
+    border: 2px solid #888;
+    padding: 10px;
+}
+.abm-form legend {
+    margin-left: 50px;
+    padding: 0 5px;
+    font-size: 20px;
+}
+.abm-form p {
+    padding: 6px;
+    background-color: #D1D1D1;
+    margin: 0 5px 5px;
+}
+.abm-form label {
+    color: #444;
+    float: left;
+    font-weight: bold;
+    line-height: 23px;
+    margin-right: 7px;
+    width: 200px;
+}
+.abm-form label:after {
+    content: " :";
+}
+.abm-form input , .abm-form select {
+    padding: 4px;
+    border: 1px solid #999;
+    background-color: #ECF4FF;
+}
+.abm-form input:focus {
+    border:1px solid #666;
+    background-color: #DBEBFF;
+}
+.abm-form .texto_largo {
+    width: 200px;
+}
+.abm-form .texto_mediano {
+    width: 150px;
+}
+.abm-form .texto_corto {
+    width: 100px;
+}
+.abm-form .numero_largo {
+    width: 180px;
+    text-align: right;
+}
+.abm-form .numero_mediano {
+    width: 130px;
+    text-align: right;
+}
+.abm-form .numero_corto {
+    width: 50px;
+    text-align: right;
+}
+.abm-form .fecha_larga {
+}
+.abm-form .fecha_mediana {
+}
+.abm-form .fecha_corta {
+}
+.abm-form .moneda {
+    width: 80px;
+    text-align: right;
+}
+.abm-form .botones {
+    
+}
+.abm-form .botones p {
+    background-color: transparent;
+    margin-top: 10px;
+    text-align: right;
+}
+.abm-form .botones .boton {
+    background-color: #E6E6E6;
+    border: 1px solid #969696;
+    color: #44708F;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0 1px 2px #303D47;
+    -moz-box-shadow: 0 1px 2px #303D47;
+    -webkit-box-shadow: 0 1px 2px #303D47;
+    padding-left: 21px;
+}
+.abm-form .botones .boton:hover {
+    background-color: #DCDCDC;
+    border: 1px solid #1F6191;
+    color: #1F6191;
+    cursor: pointer;
+}
+.abm-form .botones .boton:active {
+    box-shadow: 0 1px 2px #303D47 inset;
+    -moz-box-shadow: 0 1px 2px #303D47 inset;
+    -webkit-box-shadow: 0 1px 2px #303D47 inset;
+}
+.abm-form .botones .aceptar, .abm-form .botones .modificar {
+    background: url("../img/boton-aceptar_16x16.png") no-repeat scroll 5px 50% transparent;
+}
+.abm-form .botones .cancelar {
+    background: url("../img/boton-cancelar_16x16.png") no-repeat scroll 5px 50% transparent;
+    margin-left: 10px;
+}
+.abm-form .botones .eliminar {
+    background: url("../img/boton-eliminar_16x16.png") no-repeat scroll 5px 50% transparent;
+    margin-left: 50px;
+}
+
+/* ------------------------ FINAL: Estilo de los formularios ------------------------ */
+
+/* ------------------------ INICIO: Estilo de los formularios ------------------------ */
+.tabla-listado {
+    width: 100%;
+    margin: 20px 0;
+}
+.tabla-listado th {
+    border-bottom: 2px solid #666;
+    border-top: 2px solid #666;
+    padding: 3px 0;
+    color: #333;
+}
+.tabla-listado thead th {
+    background-color: #8F8F8F;
+    text-align: center;
+}
+.tabla-listado tfoot th {
+    background-color: #D2D2D2;
+    text-align: right;
+    padding: 3px;
+}
+.tabla-listado td {
+    border-bottom: 2px solid #FFF;
+    padding: 5px;
+}
+.tabla-listado .impar td {
+    background-color: #F1F1F1;
+}
+.tabla-listado .par td {
+    background-color: #E1E1E1;
+}
+.tabla-listado tbody tr:hover td, .tabla-listado tbody tr:hover td a:link {
+    background-color: #319BC3 !important;
+    color: #FFF;
+}
+.tabla-listado .numero {
+    text-align: right;
+}

@@ -1,0 +1,176 @@
+    
+/* ------------------------ INICIO: Estilo de los formularios ------------------------ */
+.abmForm  .mensajeError {/*selecciona la clase mensajeError de clase  abmForm  */
+    color: #EE0000;/*color rojo*/
+    cursor: default;
+    background-image: none;
+    background-attachment: scroll;
+    background-color: rgba(0, 0, 0, 0);
+    background-position: 100% 50%;
+    background-repeat: no-repeat no-repeat;
+    height: 24px;
+    padding-right: 24px;
+    line-height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+
+.abmForm  .obligatorio:before {/*selecciona la clase obligatorio de abmForm .
+        El before es para insertar contenido antes */
+    content: "* ";/*inserta contenido*/
+}
+
+.abmForm  .textoInformativo {/*selecciono textoInformativo de abmForm */
+    color: #EE0000;
+    display: block;
+    text-align: right;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+
+.abmForm  {/* seleciona abmForm  */
+    background: #DDD;
+    padding: 5px 15px;
+    /* width:330px; */
+}
+.abmForm  fieldset {/*selecciona los fieldset del abmForm */
+    border-radius: 5px;/*curva las puntas*/
+    border: 2px solid #888;/* ancho tipo color (de borde) */
+    padding: .2% .30% .30% .30%; /*  */
+}
+
+.abmForm  legend {/*selecciona la etiqueta legend que es donde estara el titulo del formulario*/
+    margin-left: 50px;/*No utilizamos padding para que la linea no se separe del texto*/
+    padding: 0 5px;
+    font-size: 20px;
+}
+
+.abmForm  div.marcoImputs {/* selecciono los div.marcoImputs  */
+    padding: 6px;   /* padding  */
+    background-color: #D1D1D1;/* coloreo el fondo */
+    margin: 0 5px 5px;    
+}
+
+.abmForm  label {/* selecciona los label  */
+    color: #444;/*  */
+    float: left;/*  */
+    font-weight: bold;/*  */
+    line-height: 23px;/*  */
+    margin-right: 7px;/*  */
+    width: 200px;/*  */
+}
+.abmForm  label:after {/*selecciona los label y le agrega contenido despues*/
+    content: " :";/* inserta contenido */
+}
+.abmForm  .textoLargo {/*seleciona la clase texto_largo, es para es para estandarizar 
+el ancho de un input*/
+    width: 200px;
+}
+.abmForm  .textoMediano {/*seleciona la clase textoMediano, es para es para estandarizar 
+el ancho de un input*/
+    width: 150px;
+}
+.abmForm  .textoCorto {/*seleciona la clase textoCorto, es para es para estandarizar 
+el ancho de un input*/
+    width: 100px;
+}
+
+.abmForm  .numeroLargo {/*seleciona la clase numeroLargo, es para es para estandarizar 
+el ancho de un input*/
+    width: 180px;
+    text-align: right;
+}
+.abmForm  .numeroMediano {/*seleciona la clase numeroMediano , es para es para estandarizar 
+el ancho de un input*/
+    width: 130px;
+    text-align: right;
+}
+.abmForm  .numeroCorto {/*seleciona la clase numeroCorto , es para es para estandarizar 
+el ancho de un input*/
+    width: 50px;
+    text-align: right;
+}
+
+.abmForm  .fechaLarga {/*seleciona la clase fechaLarga , es para es para estandarizar 
+el ancho de un input*/
+}
+.abmForm  .fechaMediana {/*seleciona la clase fechaMediana , es para es para estandarizar 
+el ancho de un input*/
+    width: 90px;
+    text-align: right;
+}
+.abmForm  .fechaCorta {/*seleciona la clase fechaCorta , es para es para estandarizar 
+el ancho de un input*/
+}
+
+.abmForm  .moneda {/*seleciona la clase moneda , es para es para estandarizar 
+el ancho de un input*/
+    width: 90px;
+    text-align: right;
+}
+
+.abmform input , .abmform select {/*selecciono etiqueta input y select*/
+    padding: 4px;/* relleno */
+    border: 1px solid #999;/* borde */
+    background-color: #E7D9D9;/*#ECECEC;*//* color de fondo del textbox */
+}
+
+.abmform input:focus {/*selecciona input cuando se hace foco en el*/
+    border:1px solid #666;/* borde al hacer foco*/
+    
+    background-color: #eee;/* color de fondo  al hacer foco*/
+}
+
+.abmform select:focus {/*selecciona select cuando se hace focus en el*/
+    border:1px solid #666;/* borde al hacer foco */    
+    background-color: #eee;/* color de fondo  al hacer foco*/
+        
+}
+/*
+.iconoCalendario {
+    background: url("../img/calendario_25.png") no-repeat scroll 100% 50% #787878;
+    padding-right: 17px;    
+}
+.iconoBuscar {   
+    background: url("../img/ver_25.png  ") no-repeat scroll 120% 50% #787878;
+    background-size: 100% 100%;
+    padding-right: 20px;    
+}
+*/
+.punteroMano{
+    cursor: pointer;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.fechaCalendario{
+    color: #444;
+    cursor: default;
+}
+
+
+img.calendario {
+    vertical-align: middle;
+    margin-right: 20px;
+    cursor: pointer;
+}
+span.fechaCalendario {
+    color: #444;
+}
+
+.abmForm .error {
+    background-image: url('../img/alert_24.png') !important;
+    cursor: pointer;
+}
+.abmForm .error:after {
+    content: "Error, clic aquí.";
+}
+
+/* ------------------------ FINAL: Estilo de los formularios ------------------------ */
+
+
+
+
+
+
